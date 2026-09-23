@@ -1,0 +1,1 @@
+select round(avg(price)::numeric, 2) as price from products
