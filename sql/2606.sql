@@ -1,9 +1,9 @@
-select
+SELECT
     products.id,
     products.name
-from
+FROM
     products
-        inner join
-    categories on categories.id = products.id_categories
-where
-    categories.name like 'super%'
+INNER JOIN
+    categories ON categories.id = products.id_categories
+WHERE
+    categories.name LIKE 'super%'

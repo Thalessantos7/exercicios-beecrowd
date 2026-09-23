@@ -5,7 +5,5 @@ FROM
     products
 INNER JOIN
     providers ON providers.id = products.id_providers
-INNER JOIN
-    categories ON categories.id = products.id_categories
 WHERE
-    products.id_categories = 6
+    providers.name = 'Ajax SA'

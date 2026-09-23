@@ -1,9 +1,9 @@
-select
+SELECT
     m.id,
     m.name
-from
+FROM
     movies m
-        inner join
-    genres g on g.id = m.id_genres
-where
+INNER JOIN
+    genres g ON g.id = m.id_genres
+WHERE
     g.description = 'Action'

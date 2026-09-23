@@ -1,9 +1,9 @@
-select
+SELECT
     c.name,
     sum(p.amount)
-from
+FROM
     categories c
-        inner join
-    products p on p.id_categories = c.id
-group by
+INNER JOIN
+    products p ON p.id_categories = c.id
+GROUP BY
     c.name

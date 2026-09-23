@@ -1,9 +1,9 @@
-select
+SELECT
     m.id,
     m.name
-from
+FROM
     movies m
-        inner join
-    prices p on p.id = m.id_prices
-where
+INNER JOIN
+    prices p ON p.id = m.id_prices
+WHERE
     p.value < 2
