@@ -1,8 +1,4 @@
-SELECT
-    id,
-    name
-FROM
-    customers
-WHERE
-    id NOT IN (SELECT id_customers FROM locations)
-ORDER BY id
+SELECT id, name
+FROM customers
+WHERE id NOT IN (SELECT id_customers FROM locations)
+ORDER BY id;
